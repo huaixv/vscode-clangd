@@ -402,6 +402,23 @@
                     "when": "clangd.ast.hasData"
                 }
             ]
-        }
-    }
+        },
+        "yamlValidation": [
+            {
+                "fileMatch": ".clang-tidy",
+                "url": "./res/schemas/clang-tidy.json"
+            },
+            {
+                "fileMatch": ".clang-format",
+                "url": "./res/schemas/clang-format.json"
+            },
+            {
+                "fileMatch": ".clangd",
+                "url": "./res/schemas/clangd.json"
+            }
+        ]
+    },
+    "extensionPack": [
+        "redhat.vscode-yaml"
+    ]
 }
